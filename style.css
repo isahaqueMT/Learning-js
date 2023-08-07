@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+ul li, a{
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+/* headerSection start */
+.headerSection{
+    padding: 12px 0;
+    background: #F5FBFF;
+}
+.headerSection .headericon{
+    width: 50%;
+    float: left;
+}
+.headerSection .headernum{
+    float: right;
+}
+
