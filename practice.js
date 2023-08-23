@@ -57,7 +57,64 @@
 
 // function=======================
 
-function say(message){
-    console.log(message);
-}
-say()
+// function say(a, b, ...last){
+//     console.log(a, b, ...last);
+// }
+// say(1, 2, 3, 4,)
+
+
+
+// Object Literals===========
+// function say(message, name){
+//     return {
+//         message,
+//         name
+//     }
+// }
+
+// console.log(say("Ishaq", "mahmud"))
+
+
+// for loop===========
+// for(let i=0; i<10; i++){
+//     console.log(i);
+// }
+
+// of loop===============
+// const array = [1,2,3,4,5]
+// for(newArray of array){
+//     console.log(newArray);
+// }
+
+// const Myname = `ishaque`;
+// const Myage = 18;
+
+// console.log(`Hi! I am ${Myname} & I am ${Myage} year's old`);
+
+
+// const obj = {
+//     name: "ishaque",
+//     age: 18,
+//     id: 21,
+// }
+// console.log(obj)
+
+
+// class=======================
+// class Book {
+//     constructor(BookName, Price){
+//         this.BookName = BookName;
+//         this.Price = Price;
+//     }
+// }
+// let BookDetails = new Book("Time Management", "500Tk");
+// console.log(BookDetails);
+
+// // static=====================
+// class Book {
+//     static fun (){
+//         console.log("hello world");
+//     }
+// }
+// Book.fun()
+
