@@ -121,7 +121,7 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 28px 0;
+    padding: 27px 0;
     border-bottom: 5px solid #ffffff;
 }
 .nav_bar a:hover {
@@ -189,7 +189,7 @@ header {
     font-weight: 700;
 }
 
-.category-items {
+.category-items, .items-container {
     width: 80%;
     margin: 50px 10%;
     display: flex;
@@ -230,4 +230,96 @@ header {
     color: #94969f;
     text-align: end;
     padding: 15px;
+}
+
+.items-container {
+    width: 80%;
+    margin: 40px 10%;
+}
+.item-container {
+    width: 250px;
+    margin: 15px 0px;
+}
+.item-img {
+    width: 100%;
+}
+.rating {
+    font-size: 12px;
+    font-weight: 700;
+}
+.company-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item-name {
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+.price {
+    margin: 10px 0 6px;
+}
+.current-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.discount {
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.btn-add-bag {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(88, 252, 88);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.item-count {
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.action_container {
+    text-decoration: none;
+}
+a.action_container:link {
+    color:black;
 }
