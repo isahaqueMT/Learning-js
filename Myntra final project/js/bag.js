@@ -2,8 +2,8 @@ let bagItemObject;
 onLoad();
 
 function onLoad() {
-  displayBagItems();
   loadBagItemObject();
+  displayBagItems();
 }
 
 function loadBagItemObject() {
@@ -24,6 +24,14 @@ function displayBagItems() {
     innerHtml += generateItemHtml(bagItem);
   });
   containerElement.innerHTML = innerHtml;
+}
+
+function removeFromBag(itemId) {
+  bagItems = bagItems.filter(bagItemId => bagItemId != itemId);
+  localStorage.setItem('bagItems', JSON.stringify(bagItems));
+  loadBagItemObject();
+  displayBagIcon();
+  displayBagItems();
 }
 
 function generateItemHtml(item) {
@@ -48,7 +56,7 @@ function generateItemHtml(item) {
         <span class="delivery-details-days">${item.delivery_date}</span>
       </div>
     </div>
-    <div class="remove-from-cart">X</div>
+    <div class="remove-from-cart" onclick="removeFromBag${item.id}">X</div>
   </div>
   `
 }
